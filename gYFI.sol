@@ -1,7 +1,3 @@
-/**
- *Submitted for verification at Etherscan.io on 2020-07-26
-*/
-
 pragma solidity ^0.5.16;
 
 interface IERC20 {
@@ -194,7 +190,7 @@ library SafeERC20 {
     }
 }
 
-contract YFII is ERC20, ERC20Detailed {
+contract GYFI is ERC20, ERC20Detailed {
   using SafeERC20 for IERC20;
   using Address for address;
   using SafeMath for uint;
@@ -203,7 +199,7 @@ contract YFII is ERC20, ERC20Detailed {
   address public governance;
   mapping (address => bool) public minters;
 
-  constructor () public ERC20Detailed("YFII.finance", "YFII", 18) {
+  constructor () public ERC20Detailed("gYFI.finance", "GYFI", 18) {
       governance = tx.origin;
   }
 
